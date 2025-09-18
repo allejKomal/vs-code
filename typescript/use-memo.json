@@ -1,0 +1,11 @@
+{
+    "useMemo Hook": {
+        "prefix": "useMemo",
+        "body": [
+            "const ${1:result} = useMemo(() => {",
+            "  return ${2:expensiveComputation};",
+            "}, [${3:dependencies}]);"
+        ],
+        "description": "Memoize a value to avoid unnecessary re-calculations"
+    }
+}

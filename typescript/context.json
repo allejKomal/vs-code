@@ -1,0 +1,22 @@
+{
+    "Context Setup": {
+        "prefix": "context",
+        "body": [
+            "import React, { createContext, useState } from 'react';",
+            "",
+            "const ${1:ContextName}Context = createContext();",
+            "",
+            "export const ${1:ContextName}Provider = ({ children }) => {",
+            "  const [${2:state}, setState] = useState(${3:defaultValue});",
+            "  return (",
+            "    <${1:ContextName}Context.Provider value={{ ${2:state}, setState }}>",
+            "      {children}",
+            "    </${1:ContextName}Context.Provider>",
+            "  );",
+            "};",
+            "",
+            "export const use${1:ContextName} = () => useContext(${1:ContextName}Context);"
+        ],
+        "description": "Sets up a React Context and provider"
+    }
+}

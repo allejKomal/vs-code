@@ -1,0 +1,11 @@
+{
+    "useContext Hook": {
+        "prefix": "useContext",
+        "body": [
+            "import { useContext } from 'react';",
+            "",
+            "const ${1:contextValue} = useContext(${2:YourContext});"
+        ],
+        "description": "Use the context value with useContext hook"
+    }
+}

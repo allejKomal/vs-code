@@ -1,0 +1,11 @@
+{
+    "setTimeout Example": {
+        "prefix": "settimeout",
+        "body": [
+            "setTimeout(() => {",
+            "  ${1:// your code to run after timeout}",
+            "}, ${2:1000});"
+        ],
+        "description": "Basic setTimeout implementation"
+    }
+}

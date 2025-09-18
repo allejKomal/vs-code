@@ -1,0 +1,13 @@
+{
+    "Conditional Rendering (If Else)": {
+        "prefix": "ifelse",
+        "body": [
+            "if (${1:condition}) {",
+            "  ${2:doSomething}",
+            "} else {",
+            "  ${3:doSomethingElse}",
+            "}"
+        ],
+        "description": "Basic if-else statement for conditional rendering"
+    }
+}

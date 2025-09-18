@@ -1,0 +1,11 @@
+{
+    "useCallback Hook": {
+        "prefix": "usecallbackhook",
+        "body": [
+            "const ${1:fnName} = useCallback(() => {",
+            "  ${2:// your function logic}",
+            "}, [${3:dependencies}]);"
+        ],
+        "description": "useCallback Hook to memoize functions"
+    }
+}

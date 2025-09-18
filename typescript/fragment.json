@@ -1,0 +1,11 @@
+{
+    "React Fragment": {
+        "prefix": "fragment",
+        "body": [
+            "<React.Fragment>",
+            "  ${1:content}",
+            "</React.Fragment>"
+        ],
+        "description": "Wrap content in a React Fragment (without adding extra DOM nodes)"
+    }
+}

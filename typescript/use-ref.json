@@ -1,0 +1,9 @@
+{
+    "useRef Hook": {
+        "prefix": "useRef",
+        "body": [
+            "const ${1:refName} = useRef(${2:null});"
+        ],
+        "description": "Create a ref with useRef"
+    }
+}

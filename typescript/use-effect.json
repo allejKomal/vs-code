@@ -1,0 +1,11 @@
+{
+    "useEffect Hook": {
+        "prefix": "useEffect",
+        "body": [
+            "useEffect(() => {",
+            "  ${1:// Your side effect here}",
+            "}, [${2:dependencies}]);"
+        ],
+        "description": "Creates a useEffect hook"
+    }
+}

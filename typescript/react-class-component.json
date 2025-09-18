@@ -1,0 +1,19 @@
+{
+    "Class Component": {
+        "prefix": "classcomponent",
+        "body": [
+            "import React, { Component } from 'react';",
+            "",
+            "class ${1:ComponentName} extends Component {",
+            "  render() {",
+            "    return (",
+            "      <div>${2:Content}</div>",
+            "    );",
+            "  }",
+            "}",
+            "",
+            "export default ${1:ComponentName};"
+        ],
+        "description": "Create a basic React class component"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "Arrow Function for Event Handler": {
+        "prefix": "arrowfunction",
+        "body": [
+            "const ${1:eventHandler} = (${2:event}) => {",
+            "  ${3:// your code here}",
+            "};"
+        ],
+        "description": "Quick snippet for creating an arrow function for an event handler"
+    }
+}

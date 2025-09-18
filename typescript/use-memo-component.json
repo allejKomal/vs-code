@@ -1,0 +1,13 @@
+{
+    "React.memo for Component Optimization": {
+        "prefix": "memocomponent",
+        "body": [
+            "const ${1:ComponentName} = React.memo(({ ${2:props} }) => {",
+            "  return (",
+            "    <div>${3:content}</div>",
+            "  );",
+            "});"
+        ],
+        "description": "Optimize component re-renders with React.memo"
+    }
+}
