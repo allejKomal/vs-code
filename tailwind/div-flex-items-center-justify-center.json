@@ -1,0 +1,11 @@
+{
+    "Flex Justify-Center Items-Center Div": {
+        "prefix": "divflexjustifycenteritemscenter",
+        "body": [
+            "<div class=\"flex justify-center items-center\">",
+            "  ${1:<!-- content here -->}",
+            "</div>"
+        ],
+        "description": "Div with flex + justify-center + items-center"
+    }
+}

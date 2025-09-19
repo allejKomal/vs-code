@@ -1,0 +1,9 @@
+{
+    "Tailwind Flexbox Layout": {
+        "prefix": "flexjustifyitemscenter",
+        "body": [
+            "flex ${1:justify-center} ${2:items-center}"
+        ],
+        "description": "Quick snippet for flex layout with justify-center and items-center"
+    }
+}

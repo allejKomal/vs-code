@@ -1,9 +1,12 @@
 const fs = require('fs');
 const path = require('path');
 
-const snippetsDir = path.join(__dirname, 'typescript');
-
-const outputFilePath = path.join('typescriptreact.json');
+const directories = ['typescript', 'tailwind', 'shadcn'];
+const outputFiles = {
+  'typescript': 'typescript.json',
+  'tailwind': 'tailwind.json',
+  'shadcn': 'shadcn.json'
+};
 
 function readJsonFile(filePath) {
   try {
@@ -14,9 +17,8 @@ function readJsonFile(filePath) {
   }
 }
 
-function mergeSnippets() {
+function mergeSnippetsFromDir(snippetsDir) {
   const snippets = {};
-
   const files = fs.readdirSync(snippetsDir)
     .filter(file => file.endsWith('.json'))
     .sort(); // Sort files alphabetically
@@ -27,9 +29,17 @@ function mergeSnippets() {
     Object.assign(snippets, fileSnippets);
   });
 
-  fs.writeFileSync(outputFilePath, JSON.stringify(snippets, null, 2));
-
-  console.log('Snippets merged and sorted successfully!');
+  return snippets;
 }
 
-mergeSnippets();
+function mergeAllSnippets() {
+  directories.forEach(dir => {
+    const snippetsDir = path.join(__dirname, dir);
+    const mergedSnippets = mergeSnippetsFromDir(snippetsDir);
+    const outputFilePath = path.join(__dirname, outputFiles[dir]);
+    fs.writeFileSync(outputFilePath, JSON.stringify(mergedSnippets, null, 2));
+    console.log(`Snippets from ${dir} merged and saved to ${outputFiles[dir]} successfully!`);
+  });
+}
+
+mergeAllSnippets();
