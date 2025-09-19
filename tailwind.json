@@ -1,0 +1,25 @@
+{
+  "Flex Justify-Center Items-Center Div": {
+    "prefix": "divflexjustifycenteritemscenter",
+    "body": [
+      "<div class=\"flex justify-center items-center\">",
+      "  ${1:<!-- content here -->}",
+      "</div>"
+    ],
+    "description": "Div with flex + justify-center + items-center"
+  },
+  "Tailwind Flexbox Layout": {
+    "prefix": "flexjustifyitemscenter",
+    "body": [
+      "flex ${1:justify-center} ${2:items-center}"
+    ],
+    "description": "Quick snippet for flex layout with justify-center and items-center"
+  },
+  "Tailwind Grid Layout": {
+    "prefix": "gridcolsgap",
+    "body": [
+      "grid grid-cols-${1:3} gap-${2:4}"
+    ],
+    "description": "Quick snippet for grid layout with 3 columns and 4 gap"
+  }
+}

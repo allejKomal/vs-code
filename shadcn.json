@@ -1,0 +1,56 @@
+{
+  "shadcn Button (variant + color + size)": {
+    "prefix": "shadcnbutton",
+    "body": [
+      "import { Button } from \"@/components/ui/button\";",
+      "",
+      "<Button",
+      "  variant=\"${1|default,destructive,outline,secondary,ghost,link|}\"",
+      "  size=\"${2|sm,default,lg,icon|}\"",
+      "  className=\"${3}\"",
+      ">",
+      "  ${4:Button Text}",
+      "</Button>"
+    ],
+    "description": "shadcn Button with variant, size and optional extra className/color"
+  },
+  "shadcn Dialog (customizable)": {
+    "prefix": "shadcndialog",
+    "body": [
+      "import {",
+      "  Dialog,",
+      "  DialogTrigger,",
+      "  DialogContent,",
+      "  DialogHeader,",
+      "  DialogTitle,",
+      "  DialogDescription,",
+      "  DialogFooter,",
+      "  DialogClose,",
+      "} from \"@/components/ui/dialog\";",
+      "import { Button } from \"@/components/ui/button\";",
+      "",
+      "<Dialog",
+      "  defaultOpen={${1:false}}",
+      "  onOpenChange={${2:(open) => {}}}",
+      ">",
+      "  <DialogTrigger asChild>",
+      "    <button className=\"${3:bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700}\">${4:Open Dialog}</button>",
+      "  </DialogTrigger>",
+      "  <DialogContent className=\"${5:max-w-md w-full bg-white p-6 rounded-lg shadow-lg}\">",
+      "    <DialogHeader>",
+      "      <DialogTitle>${6:Dialog Title}</DialogTitle>",
+      "      <DialogDescription>${7:This is the dialog description. Explain what this is about.}</DialogDescription>",
+      "    </DialogHeader>",
+      "    ${8:<p>Your custom content here...</p>}",
+      "    <DialogFooter className=\"mt-4 flex justify-end space-x-2\">",
+      "      <DialogClose asChild>",
+      "        <Button variant=\"outline\">${9:Cancel}</Button>",
+      "      </DialogClose>",
+      "      <Button variant=\"default\">${10:Confirm}</Button>",
+      "    </DialogFooter>",
+      "  </DialogContent>",
+      "</Dialog>"
+    ],
+    "description": "shadcn Dialog component with customizable trigger, content, header, description, and footer actions"
+  }
+}
